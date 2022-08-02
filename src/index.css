@@ -3,5 +3,123 @@
 }
 
 body {
-    background-color: #11141d;
+    /* background-color: #11141d; */
+    margin: 0;
+    /* color: white; */
+    font-family: "Inter", sans-serif;
+}
+
+#root {
+    position: relative;
+}
+
+.app {
+    margin-top: 45px;
+}
+
+/*----
+Header
+------*/
+
+header {
+    background-color: #f55a5a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 6px -2px #434343;
+}
+
+header > p {
+    margin-left: 7px;
+}
+
+/*--
+Post
+----*/
+
+.post {
+    border: 1px solid red;
+    padding: 0 40px;
+}
+
+.post > hr {
+    margin: 0;
+}
+
+.image-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-details > img {
+    border: 1px solid blue;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 5px -1px #8a8a8a;
+}
+
+.location {
+    border: 1px solid teal;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pin-country {
+    display: flex;
+    align-items: baseline;
+}
+
+.pin-country > img {
+    border: 1px solid green;
+    height: 16px;
+}
+
+.pin-country > p {
+    border: 1px solid orange;
+    font-size: 23px;
+    font-variant: small-caps;
+    letter-spacing: 0.17rem;
+    margin: 0 0 0 15px;
+}
+
+.location > a {
+    border: 1px solid turquoise;
+    font-size: 16px;
+    text-decoration: none;
+    color: gray;
+}
+
+.details > h1 {
+    border: 1px solid pink;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.date {
+    border: 1px solid lightblue;
+    font-weight: bold;
+    color: rgb(45, 45, 45);
+    font-size: 17.3px;
+    margin-bottom: 7px;
+}
+
+.description {
+    border: 1px solid lime;
+    font-size: 17.3px;
+    margin: 0 0 20px 0;
+}
+
+@media (min-width: 650px) {
+    #root {
+        background-color: aquamarine;
+    }
 }
