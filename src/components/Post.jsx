@@ -1,32 +1,31 @@
-import mount_fuji from "../assets/mount-fuji.png";
+// import mount_fuji from "../assets/mount-fuji.png";
 import pin from "../assets/pin.png";
 
-export default function Post() {
+export default function Post(props) {
+    console.log(props);
     return (
-        <div class="post">
-            <div class="image-details">
-                <img src={mount_fuji} alt="The post's image" />
-                <div class="details">
-                    <div class="location">
-                        <div class="pin-country">
+        <div className="post">
+            <div className="image-details">
+                <img
+                    src={`./src/assets/${props.image}`}
+                    alt="The post's image"
+                />
+                <div className="details">
+                    <div className="location">
+                        <div className="pin-country">
                             <img
                                 src={pin}
                                 alt="A pin designating the location traveled to"
                             />
-                            <p class="country">Japan</p>
+                            <p className="country">{props.country}</p>
                         </div>
-                        <a href="#" class="google">
+                        <a href="#" className="google">
                             View on Google Maps
                         </a>
                     </div>
-                    <h1>Mount Fuji</h1>
-                    <p class="date">12 Jan, 2021 - 24 Jan, 2021</p>
-                    <p class="description">
-                        Mount Fuji is the tallest mountain in Japan, standing at
-                        3,776 meters (12,380 feet). Mount Fuji is the single
-                        most popular tourist site in Japan, for both Japanese
-                        and foreign tourists.
-                    </p>
+                    <h1>{props.site}</h1>
+                    <p className="date">{props.date}</p>
+                    <p className="description">{props.description}</p>
                 </div>
             </div>
             <hr />
