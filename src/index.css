@@ -187,6 +187,7 @@ Post
         margin-left: 30px;
         overflow: hidden;
         width: 60%;
+        min-width: 300px;
     }
 }
 
