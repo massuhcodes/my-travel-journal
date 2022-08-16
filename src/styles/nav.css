@@ -1,0 +1,22 @@
+nav {
+    background-color: var(--nav-background);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--nav-shadow);
+    padding: 0 10px;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+nav > div > p {
+    margin-left: 7px;
+}

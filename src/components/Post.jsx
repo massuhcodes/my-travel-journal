@@ -1,5 +1,6 @@
 // import mount_fuji from "../assets/mount-fuji.png";
 import pin from "../assets/pin.png";
+import "../styles/post.css"
 
 export default function Post(props) {
     console.log(props);

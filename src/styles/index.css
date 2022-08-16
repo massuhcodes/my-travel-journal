@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.theme-light {
+    --background: #fff;
+    --nav-background: #f55a5a;
+    --slider-background: #9a1a1a;
+    --handle: #fff;
+    --nav-shadow: 0 4px 6px -2px #434343;
+    --post-hover-background: #ffe3e362;
+    --post-shadow: 0 5px 5px -1px #cbb4b4;
+    --divider: #dfdfdf;
+}
+
+.theme-dark {
+    --background: #2a2b2e;
+    --nav-background: #173961;
+    --slider-background: #292939;
+    --handle: #0b192b;
+    --nav-shadow: 0 4px 6px -2px #000;
+    --post-header: #b6b6b6;
+    --post-description: #8c8c8c;
+    --post-country: #f54c4c;
+    --post-date: #a5a5a5;
+    --post-link: #7b7b7b;
+    --post-hover-background: #1b212e;
+    --post-shadow: 0 5px 5px -1px #000;
+    --divider: #606060;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    /* color: white; */
+    font-family: "Inter", sans-serif;
+    /* border: 4px solid lightsteelblue; */
+    height: 100vh;
+}
+
+#root {
+    position: relative;
+    /* border: 4px solid darkmagenta; */
+}
+
+.app {
+    /* border: 4px solid lightseagreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 580px) {
+    .app {
+        /* max-width: 800px; */
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 30px;
+    }
+}
