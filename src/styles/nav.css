@@ -10,6 +10,7 @@ nav {
     right: 0;
     box-shadow: var(--nav-shadow);
     padding: 0 10px;
+    transition: 0.4s;
 }
 
 nav > div {

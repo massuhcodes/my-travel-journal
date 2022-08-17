@@ -124,3 +124,14 @@
         min-width: 300px;
     }
 }
+
+/* handles smooth transition as themes are swapped */
+.post > hr,
+.image-details > img,
+.pin-country > p,
+.location > a,
+.details > h1,
+.date,
+.description {
+    transition: 0.4s;
+}
