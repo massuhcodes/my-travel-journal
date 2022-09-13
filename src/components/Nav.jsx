@@ -9,6 +9,7 @@ export default function Nav() {
                 <img src={world} />
                 <p>my traval journal</p>
             </div>
+            <a href="#">Create</a>
             <Toggler />
         </nav>
     );
